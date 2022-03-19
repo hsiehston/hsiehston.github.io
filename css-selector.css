@@ -1,0 +1,27 @@
+/* class選擇器 */
+.style-red{color: red;}
+.style-bold{font-weight: bold;}
+/* id選擇器 */
+#title{
+    margin: 10px;
+    
+    font-size: 20px;
+}
+/* 標籤名稱選擇器 */
+    span{background-color: aqua;}
+/* 虛擬選擇器 */
+/* hover虛擬選擇器：滑鼠移到目標上時，套用一組設定 */
+#btn:hover{
+    background-color: aqua;
+}
+/* focus虛擬選擇器：當目標取得焦點時，套用一組設定 */
+input:focus{
+    border:5px solid red;
+}
+/* 階層選擇器 */
+.carry a{
+    color:red;
+}
+.support a{
+    color:#008800;
+}
