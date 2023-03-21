@@ -6,7 +6,65 @@
         <link rel="stylesheet" type="text/css" href="css-selector.css"/>
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="/">染上的Blog</a>
 
+            <div> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                    <!-- <a class="nav-link" href="/">網站首頁</a> -->
+                        <a class="nav-link" href="/articles">文章</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/discuss">討論專區</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            社群連結
+                         </a>
+                         <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://discord.gg/T5kgD6z9FR">Discord 交流群</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100088031242230">Facebook 粉專</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/groups/823853158867425">Facebook 社團</a>
+                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0" method="get" action="/search">
+                             <input class="form-control mx-lg-2" type="search" placeholder="Search" aria-label="Search" name="q" >
+                             <input type="hidden" name="from" value="search">
+                             <button class="btn btn-default mt-2 my-sm-0 ml-sm-2 ml-lg-0" type="submit">
+                             <i class="fas fa-search"></i>&nbsp;
+                                搜尋
+                             </button>
+                        </form>
+                    </li>
+                </ul>
+        
+        <!-- Right Side Of Navbar -->
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a href="/new-post" class="btn btn-primary btn my-2 my-lg-0 mr-lg-2">
+                    發佈貼文
+                </a>
+            </li>
+
+            
+                            <li class="nav-item">
+                    <a class="nav-link" href="/login?from=/">登入</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register?from=/">註冊</a>
+                </li>
+            
+        </ul>
+    </div>
+</nav>
 
     </body>
 </html>
